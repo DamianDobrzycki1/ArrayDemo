@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class ArrayDemo {
     public static void main(String[] args){
 
+        //Declares an array for integers
         int[] anArray;
 
         anArray = new int[10];
@@ -18,6 +19,11 @@ public class ArrayDemo {
         anArray[7] = 800;
         anArray[8] = 900;
         anArray[9] = 1000;
+
+        int indexvalue = 0;
+        for (int value: anArray){
+            System.out.println("Element at index " + indexvalue + " : " + value);
+        }
 
         System.out.println("Element at index 0: " + anArray[0]);
         System.out.println("Element at index 1: " + anArray[1]);
